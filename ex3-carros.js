@@ -6,13 +6,19 @@ const carros = [
 ];
 
 const buscarCarro = (marca, arrayCarros) => {
-    const resultado = arrayCarros.find((carro) => {
+    const busca = arrayCarros.find((carro) => {
         return carro.marca === marca;
     });
-    console.log(resultado);
+    console.log(busca);
 }
 
 //const resultado = buscarCarro ('toyota', carros);
 //console.log(resultado);
 
 buscarCarro('toyota', carros);
+
+const resultado = carros.findIndex((carro) => {
+    return carro.nome === 'ranger';
+});
+
+console.log( resultado);
